@@ -11,37 +11,36 @@
 /* BASE STYLES
    Main typography and global background*/
 body {
-    font-family: "Segoe UI", sans-serif; 
-    background-color: #141028;          
+    font-family: "Segoe UI", sans-serif;  /* Main website font */
+    background-color: #141028;     /* Dark purple background */     
     background-image:
-        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.06), transparent 30%);
-    color: white;                        
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.06), transparent 30%);/* Soft light effect */
+    color: white;   /* Default text color */                     
 }
 
 /* THEME TOGGLE BUTTON
    Positioned fixed for accessibility*/
 .theme-btn {
-    position: fixed;  
-    top: 25px;
-    right: 30px;
-    background: none;  
+    position: fixed;     /* Keeps the button visible while scrolling */ 
+    top: 25px;    /* Distance from top */
+    right: 30px;     /* Distance from right */
+    background: none;      /* Remove default button background */
     border: none;
-    color: #a78bfa;    
-    font-size: 20px;
-    cursor: pointer;
-    font-weight: 500;
-    z-index: 10;
+    color: #a78bfa;        /* Accent purple text color */
+    font-size: 20px;     /* Button text size */
+    cursor: pointer;     /* Show pointer cursor on hover */
+    font-weight: 500;     /* Medium font weight */
+    z-index: 10;     /* Keeps button above page content */
 }
 
 /* HERO SECTION
    Full-screen intro section */
 .the-top {
-    height: 100vh;         
-    background: transparent;
-    display: flex;          
-    justify-content: flex-start;
+    height: 100vh;      /* Makes section take full screen height */       
+    display: flex;              /* Enables flexbox layout */
+    justify-content: flex-start;     /* Align content to the left horizontally */
     padding-left: 80px;     
-    align-items: center;    
+    align-items: center;      /* Centers content vertically */  
     text-align: left;
     color: white;
 }
@@ -64,25 +63,24 @@ body {
 /* ABOUT SECTION 
    Two-column layout using Flexbox */
 .about-container {
-    display: flex;          
-    gap: 60px;              
+    display: flex;   /* Use flexbox layout */       
+    gap: 60px;          /* Space between flex items */   
     max-width: 1100px;      
-    margin: 0 auto;
+    margin: 0 auto; /* Center the container horizontally */
     padding: 100px 20px;
-    align-items: center;
-    background: transparent;
+    align-items: center;/* Vertically align items in the center */
     color: #ffffff;
 }
 
 .about-container h2 {
-    width: 30%;             
+    width: 30%;    /* Heading takes 30% of the container width */          
     font-size: 36px;
     color: #d1d5db;
 }
 
 .about-container p {
     width: 60%;             
-    line-height: 2.5;       
+    line-height: 2.5;  /* Increase space between lines for readability */     
     font-size: 18px;
 }
 
@@ -93,39 +91,36 @@ body {
 
 .projects {
     padding: 60px 20px;
-    background: transparent;
-    color: #d1d5db;
+    color: #d1d5db;  /* Set default text color (light gray) */
 }
 
 .projects h2 {
-    text-align: center;
+    text-align: center;/* Center the heading text */
     font-size: 36px;
     margin-bottom: 60px;
-    color: #d1d5db;
 }
 
 /* Grid layout for project cards */
 .cards-container {
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 1100px; /* Limit the maximum width of the grid */
+    margin: 0 auto;  /* Center the grid horizontally */
     display: grid;                              
-    grid-template-columns: repeat(3, 1fr);      
+    grid-template-columns: repeat(3, 1fr);  /* Create 3 equal-width columns */    
     gap: 40px;
 }
 
 /* Individual project card styling */
 .card {
     background-color: #1c1538;
-    color: #d1d5db;
-    border-radius: 12px;
-    overflow: hidden;         
-    transition: 0.3s ease;    
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden;     /* Hide overflowing content  */     
+    transition: 0.3s ease;   /* Smooth transition effect for hover or state changes */  
 }
 
 .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;        
+    width: 100%; /* Make image take full card width */
+    height: 200px; /* Set fixed height */
+    object-fit: cover;     /* Crop image to fill area without distortion */     
 }
 
 .card-content {
@@ -151,13 +146,13 @@ body {
 
 /* Center container with max width */
 .contact-container {
-    max-width: 1100px;
+    max-width: 1100px;  /* Limit the maximum width */
     margin: 0 auto;
     padding: 80px 20px;
 }
 
 .contact-container h2 {
-    text-align: center;
+    text-align: center; /* Center the heading text */
     margin-bottom: 50px;
     color: #d1d5db;
     font-size: 36px;
@@ -165,9 +160,9 @@ body {
 
 /* Flex layout for form (left) and info (right) */
 .contact-content {
-    display: flex;
+    display: flex; /* Use flexbox layout */
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-start;  /* Align items to the top */
     gap: 60px;
 }
 
@@ -175,15 +170,15 @@ body {
 .contact-form {
     flex: 1;
     max-width: 500px;
-    display: flex;
+    display: flex; /* Limit form width */
     flex-direction: column;
     gap: 20px;
 }
 
 /* Contact info column */
 .contact-info {
-    flex: 1;
-    display: flex;
+    flex: 1; /* Take equal available space */
+    display: flex; /* Use flexbox */
     flex-direction: column;
     gap: 50px;
 }
@@ -195,11 +190,11 @@ body {
 /* Contact links styling */
 .contact-link {
     display: flex;
-    align-items: center;
+    align-items: center;   /* Vertically align icon and text */
     gap: 40px;
     font-size: 20px;
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none;  /* Remove underline from links */
     font-weight: 500;
 }
 
@@ -212,18 +207,18 @@ body {
 
 
 .contact-form input,.contact-form textarea {
-    background-color: #1c1538;
-    border: 1px solid #2a2150;
+    background-color: #1c1538; /* Dark background */
+    border: 1px solid #2a2150; /* Subtle border color */
     padding: 12px 15px;
     border-radius: 8px;
     color: white;
-    font-family: inherit;
+    font-family: inherit; /* Inherit font from parent */
     font-size: 16px;
 }
 
 /* Placeholder color customization */
 .contact-form input::placeholder,.contact-form textarea::placeholder {
-    color: #a78bfa;
+    color: #a78bfa; /* Light purple placeholder color */
 }
 
 /* Submit button styling */
@@ -234,8 +229,8 @@ body {
     padding: 12px;
     border-radius: 8px;
     font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
+    cursor: pointer;  /* Pointer cursor on hover */
+    transition: 0.3s; /* Smooth hover transition */
 }
 
 /* Hover effect */
@@ -299,24 +294,25 @@ body.light-mode .about-container p {
 /* Tablet layout adjustment */
 @media (max-width: 1024px) {
     .cards-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);         /* Change grid to 2 columns instead of 3 for better tablet view */
     }
 }
 
 /* Mobile layout adjustment */
 @media (max-width: 768px) {
     .about-container,.contact-content {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;  /* Center-align text for mobile */
     }
 
     .cards-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;         /* Display only 1 column on small screens */
+
     }
 
     .contact-info,.contact-form {
         align-items: center;
-        margin: 0 auto;
+        margin: 0 auto;  /* Center the sections */
     }
 
 }

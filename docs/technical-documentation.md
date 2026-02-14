@@ -10,20 +10,6 @@ This project is a responsive personal portfolio website developed using HTML, CS
 
 The project follows a clean and organized folder structure:
 
-assignment-1/
-│
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── script.js
-├── assets/
-│   └── images/
-├── docs/
-│   ├── ai-usage-report.md
-│   └── technical-documentation.md
-└── README.md
-
 - HTML contains the structure.
 - CSS handles layout and styling.
 - JavaScript handles interactivity.

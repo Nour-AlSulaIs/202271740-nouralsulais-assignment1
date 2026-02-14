@@ -9,7 +9,7 @@ I used ChatGPT as a learning and support tool throughout this assignment. It was
 - Debugging CSS layout and alignment issues (Flexbox & Grid)
 - Improving responsive design for desktop, tablet, and mobile screens
 - Implementing a Dark/Light mode toggle using JavaScript
-- Creating and refining the typing animation for the "Software Engineer" tagline
+- learning the typing animation for the "Software Engineer" tagline
 
 ChatGPT was primarily used for explanations, debugging guidance, and learning new techniques rather than automatically generating the entire project.
 
@@ -42,7 +42,6 @@ Through this assignment, I learned:
 - How to properly structure responsive layouts using Flexbox and Grid
 - How to apply media queries effectively for mobile and tablet responsiveness
 - How to implement theme toggling using class manipulation in JavaScript
-- How to debug layout issues more systematically
 
 AI enhanced my learning process and helped me discover more efficient development practices.
 

@@ -2,9 +2,11 @@
    Displays the subtitle with a typewriter effect */
 
 const text = " A Software Engineer";
+// Keeps track of the current character index
 let index = 0;
+// Typing speed in milliseconds 
 const speed = 100;
-
+// Select the HTML element where the text will appear
 const typingElement = document.querySelector(".typing");
 
 function typeWriter() {
