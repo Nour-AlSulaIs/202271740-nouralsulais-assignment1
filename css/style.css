@@ -30,6 +30,7 @@ body {
     font-size: 20px;
     cursor: pointer;
     font-weight: 500;
+    z-index: 10;
 }
 
 /* HERO SECTION
@@ -91,7 +92,7 @@ body {
 
 
 .projects {
-    padding: 100px 20px;
+    padding: 60px 20px;
     background: transparent;
     color: #d1d5db;
 }
@@ -145,7 +146,7 @@ body {
 
 .contact-me {
     position: relative;
-    padding: 150px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 /* Center container with max width */
@@ -312,6 +313,12 @@ body.light-mode .about-container p {
     .cards-container {
         grid-template-columns: 1fr;
     }
+
+    .contact-info,.contact-form {
+        align-items: center;
+        margin: 0 auto;
+    }
+
 }
 
 
